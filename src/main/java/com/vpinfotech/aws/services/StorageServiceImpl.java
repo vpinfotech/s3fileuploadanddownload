@@ -51,7 +51,7 @@ public class StorageServiceImpl {
             S3Object s3Object=s3Client.getObject(bucketName,optional.get().getAws_fileName());
             S3ObjectInputStream inputStream= s3Object.getObjectContent();
             content= IOUtils.toByteArray(inputStream);
-        }catch(NullPointerException | IOException npe){
+        }catch(NullPointerException |IOException npe){
             content="Content is null".getBytes();
             System.out.println(npe.getMessage());
         }

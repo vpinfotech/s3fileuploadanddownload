@@ -3,7 +3,7 @@ package com.vpinfotech.aws.entity;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
-
+//
 @Entity
 @Table(name="aws_file_storage")
 public class ImageStorage {
